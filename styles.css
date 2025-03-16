@@ -154,3 +154,87 @@ nav a:hover {
 .contact-details a:hover {
   text-decoration: underline;
 }
+
+
+
+
+
+/* Masonry-style gallery grid */
+.gallery-grid {
+  column-count: 3;
+  column-gap: 1.5em;
+  padding-top: 1em;
+}
+
+.gallery-grid a {
+  display: block;
+  break-inside: avoid;
+  margin-bottom: 1.5em;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive columns */
+@media (max-width: 768px) {
+  .gallery-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    column-count: 1;
+  }
+}
+
+/* Lightbox overlay */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  padding: 1em;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+  margin-bottom: 1em;
+}
+
+.lightbox-caption {
+  color: #fff;
+  font-size: 1.1em;
+  text-align: center;
+  max-width: 80%;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1em;
+  right: 1.5em;
+  font-size: 2.5em;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 10000;
+}
