@@ -287,8 +287,8 @@ nav {
     display: block;
   }
 
-  nav,
-  .hero nav {
+  #mobileMenu,
+  .hero #mobileMenu {
     display: none;
     flex-direction: column;
     background-color: #333;
@@ -300,9 +300,22 @@ nav {
     z-index: 99;
   }
 
-  nav.show,
-  .hero nav.show {
+  #mobileMenu.show,
+  .hero #mobileMenu.show {
     display: flex;
   }
 }
+
+@media (min-width: 769px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    background-color: #333;
+    padding: 1em;
+  }
+}
+
+
 
