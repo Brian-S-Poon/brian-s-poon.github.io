@@ -1,11 +1,10 @@
-// Mobile Menu Toggle Function — must be global
-function toggleMobileMenu() {
-  const menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("show");
-}
+// Declare menuToggle globally, but wait for DOM to load before attaching event
+let mobileMenu;
 
-// Lightbox with dynamic DOM and captions
 document.addEventListener("DOMContentLoaded", () => {
+  mobileMenu = document.getElementById("mobileMenu");
+
+  // Lightbox setup
   const lightbox = document.createElement("div");
   lightbox.classList.add("lightbox");
   document.body.appendChild(lightbox);
@@ -23,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
   lightbox.appendChild(caption);
 
   const links = document.querySelectorAll('[data-lightbox="gallery"]');
-
   links.forEach(link => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
@@ -45,3 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// GLOBAL function (can be used inline in HTML)
+function toggleMobileMenu() {
+  if (!mobileMenu) {
+    mobileMenu = document.getElementById("mobileMenu");
+  }
+  if (mobileMenu) {
+    mobileMenu.classList.toggle("show");
+  }
+}
