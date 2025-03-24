@@ -270,3 +270,44 @@ nav {
   font-weight: bold;
   z-index: 10000;
 }
+
+
+
+.hamburger {
+  display: none;
+  font-size: 2em;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 10001;
+  cursor: pointer;
+  color: white;
+}
+
+/* Make hamburger visible on mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 4em;
+    right: 1em;
+    padding: 1em;
+    border-radius: 8px;
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 0.5em 0;
+    color: white;
+  }
+}
