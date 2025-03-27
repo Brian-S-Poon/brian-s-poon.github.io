@@ -19,6 +19,7 @@ body {
 }
 
 .hero-title {
+  font-family: 'Cormorant Garamond', serif;
   position: absolute;
   top: 25%;
   left: 50%;
@@ -270,3 +271,9 @@ nav {
   font-weight: bold;
   z-index: 10000;
 }
+
+
+
+
+
+
