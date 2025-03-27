@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       lightbox.style.display = "flex";
     });
   });
+<<<<<<< HEAD
 
   closeButton.addEventListener("click", () => {
     lightbox.style.display = "none";
@@ -53,3 +54,6 @@ function toggleMobileMenu() {
     mobileMenu.classList.toggle("show");
   }
 }
+=======
+  
+>>>>>>> parent of f17d875 (add hamburger toggle)
