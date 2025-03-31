@@ -80,6 +80,7 @@ nav {
 }
 
 .bio-text {
+  font-family: 'Cormorant Garamond', serif;
   flex: 1;
   min-width: 250px;
   font-size: 1.3em;
