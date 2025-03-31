@@ -136,6 +136,98 @@ nav {
 }
 
 /* Responsive contact section */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3em clamp(1em, 10vw, 10em);
+  background-color: #e7e7e3;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.contact-section-logo {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-section-logo h2 {
+  font-size: 2.5em;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 0.5em;
+}
+
+.contact-section-logo p {
+  font-size: 1.2em;
+  color: #222;
+  line-height: 1.5em;
+}
+
+.contact-section-details {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact-section-details label {
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-section-details .required {
+  font-weight: normal;
+  font-size: 0.9em;
+  color: #777;
+  margin-left: 0.3em;
+}
+
+.name-fields {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.name-fields input {
+  flex: 1;
+}
+
+.contact-section-details input,
+.contact-section-details textarea {
+  padding: 0.8em 1em;
+  border: 1px solid #666;
+  border-radius: 25px;
+  font-size: 1em;
+  width: 100%;
+}
+
+.contact-section-details textarea {
+  resize: vertical;
+  height: 120px;
+  border-radius: 20px;
+}
+
+.contact-section-details button {
+  width: fit-content;
+  padding: 0.8em 2em;
+  font-size: 1.1em;
+  border: 1px solid #4a5a6a;
+  background-color: white;
+  color: #4a5a6a;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-section-details button:hover {
+  background-color: #d8d8d8;
+}
+
+
+
+/* simple contact on the bottom */
 .simple-contact {
   display: flex;
   justify-content: space-between;
@@ -156,26 +248,6 @@ nav {
   min-width: 200px;
 }
 
-.contact-details h3 {
-  margin: 0 0 0.5em;
-  font-size: 1.25em;
-  color: #222;
-}
-
-.contact-details p {
-  margin: 0;
-  color: #222;
-  line-height: 1.5em;
-}
-
-.contact-details a {
-  color: #222;
-  text-decoration: none;
-}
-
-.contact-details a:hover {
-  text-decoration: underline;
-}
 
 /* Responsive gallery grid */
 .gallery-grid {
