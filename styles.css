@@ -275,6 +275,27 @@ nav {
 
 
 
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.video-wrapper video {
+  width: 100%;
+  max-width: 800px;
+  border: 2px solid #222;
+  border-radius: 10px;
+}
+
+.video-content {
+  font-family: 'Cormorant Garamond', serif;
+  padding: 2em;
+}
+
+
+
 
 
 
