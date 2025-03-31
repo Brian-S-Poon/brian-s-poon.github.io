@@ -32,18 +32,28 @@ body {
   z-index: 2;
 }
 
+.hero nav,
+nav {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .hero nav {
   position: absolute;
   top: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-  flex-wrap: wrap;
-  padding: 1em;
   z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3); /* translucent */
 }
+
+
 
 .hero nav a, nav a {
   color: white;
@@ -55,15 +65,7 @@ body {
   text-decoration: underline;
 }
 
-nav {
-  background-color: #333;
-  color: white;
-  padding: 1em;
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-  flex-wrap: wrap;
-}
+
 
 .content {
   padding: 2em;
