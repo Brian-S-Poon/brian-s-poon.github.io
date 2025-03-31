@@ -107,6 +107,7 @@ nav {
 }
 
 .social-section h2 {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 2.5em;
   margin-bottom: 1em;
 }
@@ -241,6 +242,7 @@ nav {
   font-size: 2em;
   font-weight: bold;
   color: #222;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .contact-details {
