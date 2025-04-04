@@ -60,7 +60,13 @@ nav {
   background-color: rgba(0, 0, 0, 0.3); /* translucent */
 }
 
-
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+  }
+}
 
 .hero nav a, nav a {
   color: white;
@@ -446,8 +452,3 @@ nav a.active {
 .performance-details {
   flex: 2 1 400px;
 }
-
-
-
-
-
