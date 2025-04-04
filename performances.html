@@ -4,8 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Performances - My Website</title>
+  <title>Performances - Jocelyn Nguyen</title>
   <link rel="stylesheet" href="styles.css">
+
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 <body>
   <nav>
@@ -15,15 +19,27 @@
     <a href="media.html">Media</a>
   </nav>
 
-  <div class="content">
+  <div class="content performances" data-aos="fade-up">
     <h1>Performances</h1>
-    <p>This is the Performances page content.</p>
+
+    <div class="performance-entry" data-aos="fade-up" data-aos-delay="100">
+      <div class="performance-image">
+        <img src="images/concert-flyer.jpg" alt="Kyrie Poster" class="responsive-img">
+      </div>
+      <div class="performance-details">
+        <h2>An evening of Rachmaninoff's Night Vespers and Byzantine Sacred Music</h2>
+        <p>
+          <strong>Date:</strong> Saturday, June 14, 2025<br>
+          <strong>Time:</strong> 7:00 PM – 8:35 PM<br>
+          <strong>Location:</strong> St. Paul’s Greek Orthodox Church, Irvine, CA<br><br>
+          A rare concert of Orthodox music with excerpts from Rachmaninoff’s legendary night vespers and sacred music from Byzantine and Slavic traditions. <em>Vox Obscura</em> will be joined by professional oktavist Alexander Mayang for this exotic, sacred journey to the origin of music and liturgy. Located in the gorgeous St. Paul’s Greek Orthodox Basilica</a> in Irvine, CA.<br><br>
+          Tickets will be on sale soon.
+        </p>
+        <a href="https://www.voxobscura.org/performances/orthodox" class="social-button">View Event</a>
+      </div>
+    </div>
   </div>
 
-  
-
   <script src="scripts.js"></script>
-
-  <button id="backToTop">↑</button>
 </body>
 </html>

@@ -57,3 +57,9 @@ document.addEventListener("DOMContentLoaded", () => {
     
   });
   
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    AOS.init();
+  });
+  
