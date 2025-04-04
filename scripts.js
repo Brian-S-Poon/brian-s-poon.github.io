@@ -38,5 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
         lightbox.style.display = "none";
       }
     });
+
+
+
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        lightbox.style.display = "none";
+      }
+    });
   });
   
