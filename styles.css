@@ -41,12 +41,9 @@ body {
 
 .hero nav,
 nav {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: #222;
+  background-color: #333;
   color: white;
-  padding: 1em 2em;
+  padding: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,8 +51,6 @@ nav {
   flex-wrap: wrap;
   width: 100%;
   box-sizing: border-box;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  font-family: 'Cormorant Garamond', serif;
 }
 
 .hero nav {
@@ -65,32 +60,16 @@ nav {
   background-color: rgba(0, 0, 0, 0.3); /* translucent */
 }
 
-nav a {
+
+
+.hero nav a, nav a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 1.1em;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
-  padding-bottom: 4px;
-  border-bottom: 2px solid transparent;
+  font-weight: bold;
 }
 
-nav a:hover {
-  color: #d1d1ce;
-  border-bottom: 2px solid #d1d1ce;
-}
-
-nav a.active {
-  color: #d1d1ce;
-  border-bottom: 2px solid #d1d1ce;
-}
-
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    gap: 1em;
-    padding: 1em;
-  }
+.hero nav a:hover, nav a:hover {
+  text-decoration: underline;
 }
 
 
@@ -399,7 +378,10 @@ nav a.active {
 }
 
 
-
+nav a.active {
+  text-decoration: underline;
+  color: #d1d1ce;
+}
 
 
 /* Back to Top Button */
