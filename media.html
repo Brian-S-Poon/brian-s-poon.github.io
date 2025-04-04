@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Media - Jocelyn Nguyen</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 <body>
   <nav>
@@ -26,11 +29,42 @@
     </div>
   </div>
 
+  <h2 style="text-align: center;" data-aos="fade-up">My SoundCloud Tracks</h2>
+
+  <div class="soundcloud-embed" data-aos="fade-up">
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https://soundcloud.com/jocelyn-nguyen-truong/kyric-wav&color=%23333">
+    </iframe>
+  </div>
+
+  <div class="soundcloud-embed" data-aos="fade-up" data-aos-delay="200">
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https://soundcloud.com/jocelyn-nguyen-truong/mediterraneo-v2&color=%23333">
+    </iframe>
+  </div>
+
+  <div class="soundcloud-embed" data-aos="fade-up" data-aos-delay="300">
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https://soundcloud.com/jocelyn-nguyen-truong/sunset-bridge&color=%23333">
+    </iframe>
+  </div>
+
+  <div class="soundcloud-embed" data-aos="fade-up" data-aos-delay="500">
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https://soundcloud.com/jocelyn-nguyen-truong/mediterraneo&color=%23333">
+    </iframe>
+  </div>
+
+
+
 
   
 
   <script src="scripts.js"></script>
 
   <button id="backToTop">↑</button>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
