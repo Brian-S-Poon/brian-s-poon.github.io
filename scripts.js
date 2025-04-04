@@ -47,5 +47,13 @@ document.addEventListener("DOMContentLoaded", () => {
         lightbox.style.display = "none";
       }
     });
+
+    window.addEventListener('scroll', () => {
+      document.getElementById('backToTop').style.display =
+        window.scrollY > 300 ? 'block' : 'none';
+    });
+    document.getElementById('backToTop').onclick = () =>
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    
   });
   
