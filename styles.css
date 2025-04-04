@@ -1,7 +1,8 @@
 /* styles.css */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #e7e7e3;
 }
 
 .hero {
@@ -408,7 +409,7 @@ nav a.active {
 }
 
 .performance-image {
-  flex: 1 1 30px;
+  flex: 1 1 300px;
 }
 
 .performance-image img.responsive-img {
