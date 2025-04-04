@@ -384,19 +384,40 @@ nav a.active {
 }
 
 
+/* Back to Top Button */
 #backToTop {
   position: fixed;
-  bottom: 2em;
-  right: 2em;
-  display: none;
-  background: #2c3e50;
-  color: white;
-  border: none;
+  bottom: 1.5em;
+  right: 1.5em;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   font-size: 1.5em;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #1a252f;
+  transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+  #backToTop {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+    bottom: 1em;
+    right: 1em;
+  }
 }
 
 
