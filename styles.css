@@ -71,6 +71,21 @@ nav {
   text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+  .hero nav,
+  nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: flex-start;
+  }
+
+  nav a {
+    flex: 0 0 auto;
+    padding: 1em 1.5em;
+  }
+}
+
 
 
 .content {
