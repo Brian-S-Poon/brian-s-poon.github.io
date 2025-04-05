@@ -203,6 +203,13 @@ nav {
   flex: 1;
 }
 
+@media (max-width: 480px) {
+  .name-fields {
+    flex-direction: column;
+  }
+}
+
+
 .contact-section-details input,
 .contact-section-details textarea {
   padding: 0.8em 1em;
@@ -336,6 +343,7 @@ nav {
   border-radius: 10px;
   box-shadow: 0 0 20px #000;
   margin-bottom: 1em;
+  margin: 0 1em 1em;
 }
 
 .lightbox-caption {
